@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-fundo: #fff;
+    --color-conteudo: #000;
+}
+
+.dark {
+    --color-fundo: #272829;
+    --color-conteudo: #fff;
+}
+
+html {
+    background-color: var(--color-fundo);
+    color: var(--color-conteudo);
+    transition: 500ms ease-in-out;
+    
+}
+
+.menu {
+    display: flex;
+
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+       
+}
+
+.menu li {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(126, 126, 223);
+    color: #fff;
+    border: 2px solid var(--color-conteudo);
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: aquamarine;
+    color: black;
+    transition: 500ms ease-in-out;
+}
+
+.toggle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-conteudo);
+    color: var(--color-fundo);
+
+}
+
+.container {
+    display: flex;
+    border-top: 2px solid var(--color-conteudo);
+    text-align: center;
+    padding: 10px;
+}
+
+.cont {
+    width: 50%;
+    border-right: 2px solid var(--color-conteudo);
+    
+}
+
+.cont h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.cont p {
+    font-size: 30px;
+}
+
+.cont-left {
+    width: 50%;
+    padding: 10px;
+}
+
+.cont-left h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.cont-left p {
+    font-size: 30px;
+}
